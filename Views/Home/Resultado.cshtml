@@ -1,0 +1,22 @@
+﻿@model IEnumerable<Resposta>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/lib/bootstrap5/dist/css/bootstrap.css"
+</head>
+<body>
+    <h1>EnqueteWeb</h1>
+    <div class="container">
+        <h2>Resultado parcial </h2>
+        <h4>Você teria coragem de fazer uma viagem sem volta para Marte?</h4>
+        @foreach(Resposta r in Model)
+            {
+                <p> @(r.Nome): @(r.Sim.Value ? "Sim" : "Não")</p>
+            }
+        
+        <p>
+            <a asp-action="Index"> Voltar ao inicio </a>
+        </p>
+    </div>
+</body>
+</html>
