@@ -18,39 +18,39 @@ namespace MeuPrimeiroProjeto.Models
         {
             respostas.Add(new Resposta()
             {
-                Nome = "Anna",
+                Name = "Anna",
                 Email = "anna@gmail.com",
-                Sim = true
+                Yes = true
             });
             respostas.Add(new Resposta()
             {
-                Nome = "Laura",
+                Name = "Laura",
                 Email = "laura@gmail.com",
-                Sim = true
+                Yes = true
             });
             respostas.Add(new Resposta()
             {
-                Nome = "Nancy",
+                Name = "Nancy",
                 Email = "nancy@gmail.com",
-                Sim = true
+                Yes = true
             });
             respostas.Add(new Resposta()
             {
-                Nome = "Will",
+                Name = "Will",
                 Email = "will@gmail.com",
-                Sim = false
+                Yes = false
             });
             respostas.Add(new Resposta()
             {
-                Nome = "Eleven",
+                Name = "Eleven",
                 Email = "eleven@gmail.com",
-                Sim = true
+                Yes = true
             });
             respostas.Add(new Resposta()
             {
-                Nome = "Mike",
+                Name = "Mike",
                 Email = "mike@gmail.com",
-                Sim = false
+                Yes = false
             });
         }
     }

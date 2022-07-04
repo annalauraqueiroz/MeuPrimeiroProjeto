@@ -41,5 +41,12 @@ namespace MeuPrimeiroProjeto.Controllers
         {
             return View(Repositorio.Respostas);
         }
+
+        [HttpGet]
+        [Route("ProductController/Products/Index.cshtml")]
+        public IActionResult Products()
+        {
+            return View("~/Views/Products/Index.cshtml");
+        }
     }
 }

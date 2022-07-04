@@ -2,20 +2,20 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="/lib/bootstrap5/dist/css/bootstrap.css"
+    <link rel="stylesheet" href="/lib/bootstrap5/dist/css/bootstrap.css" />
 </head>
 <body>
-    <h1>EnqueteWeb</h1>
-    <div class="container">
-        <h2>Resultado parcial </h2>
-        <h4>Você teria coragem de fazer uma viagem sem volta para Marte?</h4>
+     <div> 
+        <h2>Partial results </h2>
+        <h4>Would you take a one-way trip to Mars?</h4>
+
         @foreach(Resposta r in Model)
             {
-                <p> @(r.Nome): @(r.Sim.Value ? "Sim" : "Não")</p>
+                <p> @(r.Name): @(r.Yes.Value ? "Yes" : "No")</p>
             }
         
         <p>
-            <a asp-action="Index"> Voltar ao inicio </a>
+            <a class="btn btn-info" asp-action="Responder">Answer</a>
         </p>
     </div>
 </body>
