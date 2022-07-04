@@ -8,11 +8,11 @@ namespace MeuPrimeiroProjeto.Models
 {
     public class Resposta
     {
-        [Required(ErrorMessage ="O campo Nome deve ser preenchido")]
-        public string Nome { get; set; }
-        [Required(ErrorMessage = "O campo Email deve ser preenchido")]
+        [Required(ErrorMessage ="Field 'name' must be filled in ")]
+        public string Name { get; set; }
+        [Required(ErrorMessage = "Field 'e-mail' must be filled in")]
         public string Email { get; set; }
-        [Required(ErrorMessage = "O campo Resposta deve ser preenchido")]
-        public bool? Sim { get; set; }
+        [Required(ErrorMessage = "Field 'answer' must be filled in")]
+        public bool? Yes { get; set; }
     }
 }
